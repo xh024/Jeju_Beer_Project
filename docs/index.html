@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font 불러오기 -->
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery 불러오기 -->
+  <script src="js/jquery-3.6.4.min.js" defer></script>
+  <!-- owl carousel 불러오기 -->
+  <script src="js/owl.carousel.min.js" defer></script>
+  <!-- interactive banner javascript 불러오기 -->
+  <script src="js/script.js" defer></script>
+  <title>제주맥주</title>
+</head>
+<body>
+  <!-- top bar 구현 시작 -->
+  <div class="top-bar">
+      <!-- pc top bar 시작 -->
+  <header id="pc-top-bar">
+    <div class="pc-top-bar__section-01">
+      <div class="container">
+        <div class="item"></div>
+        <div class="item">
+          <a class="logo" href="#">
+            <img src="images/pc-logo.png" alt="main-logo">
+          </a>
+        </div>
+        <div class="item">
+          <div class="pc-top-bar__widget">
+            <nav class="widget__menu">
+              <ul>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">RECRUIT</a></li>
+              </ul>
+            </nav>
+            <div class="widget__btns">
+              <a href="#">논알콜 제주누보 구매</a>
+              <a href="#">양조장 예약</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pc-top-bar__section-02">
+      <div class="container">
+        <nav class="main-menu">
+          <ul>
+            <li><a href="#">BARREL SERIES</a></li>
+            <li><a href="#">SUPPORTERS</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BREWERY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- pc top bar 끝-->
+  <!-- mobile top bar 시작 -->
+  <header id="mobile-top-bar">
+    <div class="container">
+      <div class="item">
+        <a class="mobile-top-bar__logo" href="#">
+          <img src="images/mobile-logo.png" alt="main-logo">
+        </a>
+      </div>
+      <div class="item">
+        <!-- 버튼 삽입 -->
+        <input type="checkbox" id="hamburgerIcon">
+        <!-- label 태그 for을 사용해 input과 연결 후 span 태그로 햄버거 도형 자리 삽입 -->
+        <label for="hamburgerIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- 사이드바 시작 -->
+        <div class="side-bar">
+          <section class="side-bar__header">
+            <div class="side-bar__menu-top">
+              <a class="side-bar-logo" href="#">
+                <img src="images/side-bar-logo.png" alt="main-logo">
+              </a>
+            </div>
+            <ul class="side-bar__menu">
+              <li class="link">
+                <span><a href="#">LOGIN</a></span>
+                <span><a href="#">JOIN</a></span>
+                <span><a href="#">RECRUIT</a></span>
+              </li>
+              <li class="reservation-link">
+                <span></span>
+                <span><a href="#">양조장 예약</a></span>
+              </li>
+            </ul>
+          </section>
+          <section class="side-bar__main">
+            <ul class="side-bar__main-menu">
+              <li>
+                <a href="#">
+                  <em>SHOP</em>
+                  <a class="cartIcon" href="#"></a>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <em>BARREL SERIES</em>
+                  <span>with Piaf</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <em>POP-UP</em>
+                  <span>제주위트시장-바</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <em>EVENT</em>
+                </a>
+              </li>
+              <li class="line">
+                <a href="#">
+                  <em>BREWERY</em>
+                  <span>양조장투어</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="side-bar__etc-menu">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our beers</a></li>
+              <li><a href="#">news</a></li>
+            </ul>
+          </section>
+          <section class="side-bar__footer">
+            <ul class="side-bar__sns">
+              <li><a href="#"><img src="images/footer-icon-1.png" alt=""></a></li>
+              <li>
+                <a href="#"><img src="images/footer-icon-2.png" alt=""></a>
+                <a href="#"><img src="images/footer-icon-3.png" alt=""></a>
+                <a href="#"><img src="images/footer-icon-4.png" alt=""></a>
+              </li>
+            </ul>
+            <ul class="side-bar__etc">
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">IR</a></li>
+            </ul>
+          </section>
+        </div>
+        <!-- 사이드바 끝 -->
+      </div>
+    </div>
+  </header>
+  <!-- mobile top bar 끝 -->
+  </div>
+  <!-- top bar 구현 끝 -->
+
+  <!-- video 구현 시작 -->
+  <div class="video">
+      <!-- pc 섹션 비디오 구현 시작 -->
+  <section id="pc-section-video-wrap">
+    <video autoplay loop muted playsinline src="videos/pc-jejulager.mp4"></video>
+  </section>
+  <!-- pc 섹션 비디오 구현 끝 -->
+  <!-- mobile 섹션 비디오 구현 시작 -->
+  <section id="mobile-section-video-wrap">
+    <video autoplay loop muted playsinline src="videos/mobile-jejulager.mp4"></video>
+  </section>
+  <!-- mobile 섹션 비디오 구현 끝 -->
+  </div>
+  <!-- video 구현 끝 -->
+
+  <!-- banner 구현 시작 -->
+  <div class="banner"> 
+    <!-- pc 섹션 배너 시작 -->
+    <div id="pc-section-banner-wrap">
+      <section class="section-banner section-banner-1">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-1__logo">
+              <img src="images/banner-1-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-1__item-box">
+              <div class="section-banner-1__img">
+                <img src="images/banner-1-img.png" alt="banner-img">
+              </div>
+              <div class="section-banner-1__text">
+                <div>
+                  <span><strong>제주라거</strong>는 맥주의 기본 4대 원료를 사용하는</span>
+                  <span>독일 맥주 순수령 원칙을 지킨</span>
+                  <span>제주 하얀 파도의 시원함과</span>
+                  <span>부드러움을 닮은 올 몰트 라거입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-2">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-2__logo">
+              <img src="images/banner-2-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-2__item-box">
+              <div class="section-banner-2__img">
+                <img src="images/banner-2-img.png" alt="banner-img">
+              </div>
+              <div class="section-banner-2__text">
+                <div>
+                  <span><strong>제주 위트 에일</strong>은 제주 감귤 껍질의 상큼함과 섬세한 꽃 향,</span>
+                  <span>입 안 가득 부드럽게 퍼지는 시트러스향이 만나</span>
+                  <span>산뜻한 끝 맛을 선사하는 밀맥주입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-3">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-3__logo">
+              <img src="images/banner-3-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-3__item-box">
+              <div class="section-banner-3__img">
+                <img src="images/banner-3-img.png" alt="banner-img">
+              </div>
+              <div class="section-banner-3__text">
+                <div>
+                  <span><strong>제주 펠롱 에일</strong>은 반딧불이 반짝이는 곶자왈에서 영감을 받아 탄생하였습니다.</span>
+                  <span>다양하고 개선있는 흡들을 블렌딩하여</span>
+                  <span>시트러스 아로마와 진한 맥아의 맛이 어우러져</span>
+                  <span>풍부한 풍미를 선사하는 페일에일 맥주입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-4">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-4__logo">
+              <img src="images/banner-4-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-4__item-box">
+              <div class="section-banner-4__img">
+                <img src="images/banner-4-img.png" alt="banner-img">
+              </div>
+              <div class="section-banner-4__text">
+                <div>
+                  <span><strong>제주 거멍 에일</strong>은 제주의 여름밤을 떠올리게 하는 짙은 빛깔 속에서,</span>
+                  <span>제주 흑보리와 초콜릿 밀로 완성된</span>
+                  <span>은은한 달큰함과 경쾌한 풍미를 자아내는 흑맥주입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- pc 섹션 배너 끝 -->
+    <!-- mobile 섹션 배너 시작 -->
+    <div id="mobile-section-banner-wrap">
+      <section class="section-banner section-banner-1">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-1__logo">
+              <img src="images/banner-1-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-1__img">
+              <img src="images/banner-1-img.png" alt="banner-img">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-1__text">
+              <div>
+                <span><strong>제주라거</strong>는</span>
+                <span>맥주의 기본 4대 원료를 사용하는</span>
+                <span>독일 맥주 순수령 원칙을 지킨</span>
+                <span>제주 하얀 파도의 시원함과</span>
+                <span>부드러움을 닮은 올 몰트 라거입니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-2">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-2__logo">
+              <img src="images/banner-2-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-2__img">
+              <img src="images/banner-2-img.png" alt="banner-img">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-2__text">
+              <div>
+                <span><strong>제주 위트 에일</strong>은</span>
+                <span>제주 감귤 껍질의 상큼함과 섬세한 꽃 향,</span>
+                <span>입 안 가득 부드럽게 퍼지는 시트러스향이 만나</span>
+                <span>산뜻한 끝 맛을 선사하는 밀맥주입니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-3">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-3__logo">
+              <img src="images/banner-3-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-3__img">
+              <img src="images/banner-3-img.png" alt="banner-img">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-3__text">
+              <div>
+                <span><strong>제주 펠롱 에일</strong>은 반딧불이 반짝이는 곶자왈에서</span>
+                <span>영감을 받아 탄생하였습니다.</span>
+                <span>다양하고 개선있는 흡들을 블렌딩하여</span>
+                <span>시트러스 아로마와 진한 맥아의 맛이 어우러져</span>
+                <span>풍부한 풍미를 선사하는 페일에일 맥주입니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-banner section-banner-4">
+        <div class="container-banner">
+          <div class="item">
+            <div class="section-banner-4__logo">
+              <img src="images/banner-4-logo.png" alt="banner-logo">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-4__img">
+              <img src="images/banner-4-img.png" alt="banner-img">
+            </div>
+          </div>
+          <div class="item">
+            <div class="section-banner-4__text">
+              <div>
+                <span><strong>제주 거멍 에일</strong>은</span>
+                <span>제주의 여름밤을 떠올리게 하는 짙은 빛깔 속에서,</span>
+                <span>제주 흑보리와 초콜릿 밀로 완성된 은은한 달큰함과</span>
+                <span>경쾌한 풍미를 자아내는 흑맥주입니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- mobile 섹션 배너 끝 -->
+  </div>
+  <!-- banner 구현 끝 -->
+
+  <!-- interactive banner 구현 시작 -->
+  <div class="interactive-banner">
+      <!-- pc-interactive-banner 시작 -->
+  <div id="pc-interactive-banner">
+    <div class="interactive-banner__container">
+      <!-- main text 시작 -->
+      <div class="interactive-banner__main-text">
+        <p>제주맥주는<br>
+        <strong>전국 편의점 및 대형마트</strong>에서 만나보실 수 있습니다.
+        </p>
+      </div>
+      <!-- main text 끝 -->
+      <!-- owl-carousel 시작 -->
+      <div class="owl-carousel">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+        <img src="images/6.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+        <img src="images/9.jpg">
+        <img src="images/10.jpg">
+        <img src="images/11.jpg">
+        <img src="images/12.jpg">
+        <img src="images/13.jpg">
+      </div>
+      <!-- owl-carousel 시작 -->
+    </div>
+  </div>
+  <!-- pc-interactive-banner 끝 -->
+  <!-- mobile-interactive-banner 시작 -->
+  <div id="mobile-interactive-banner">
+    <div class="interactive-banner__container">
+      <!-- main text 시작 -->
+      <div class="interactive-banner__main-text">
+        <p>제주맥주는<br>
+        <strong>전국 편의점 및 대형마트</strong>에서 만나보실 수 있습니다.
+        </p>
+      </div>
+      <!-- main text 끝 -->
+      <!-- owl-carousel 시작 -->
+      <div class="owl-carousel">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+        <img src="images/6.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+        <img src="images/9.jpg">
+        <img src="images/10.jpg">
+        <img src="images/11.jpg">
+        <img src="images/12.jpg">
+        <img src="images/13.jpg">
+      </div>
+        <!-- owl-carousel 시작 -->
+    </div>
+  </div>
+  <!-- mobile-interactive-banner 끝 -->
+  </div>
+  <!-- interactive banner 구현 끝 -->
+
+  <!-- footer wrap 구현 시작-->
+  <div class="footer-wrap">
+      <!-- pc-footer 시작 -->
+      <footer id="pc-footer-bar">
+        <div class="footer-container">
+          <div class="footer-info">
+            <nav class="footer-info__service-link">
+              <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">OUR BEERS</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">영상정보 처리방침</a></li>
+              </ul>
+            </nav>
+            <div class="footer-info__btn-wrap">
+              <ul>
+                <li><a href="#"><img src="images/footer-icon-1.png" alt="footer-icon"></a></li>
+                <li><a href="#"><img src="images/footer-icon-2.png" alt="footer-icon"></a></li>
+                <li><a href="#"><img src="images/footer-icon-3.png" alt="footer-icon"></a></li>
+                <li><a href="#"><img src="images/footer-icon-4.png" alt="footer-icon"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-business">
+            <p>
+              제주맥주 주식회사 &nbsp; &nbsp; 대표이사 문혁기<br>
+              본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11&nbsp; &nbsp; 서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층<br>
+              호스팅 제공자 (주)아임웹&nbsp; &nbsp; 사업자등록번호 616-86-27415&nbsp; &nbsp; 통신판매업신고번호 제 2020-제주한림-0101 호<br>
+              고객센터 <strong>02-2235-5559, <a href="mailto:jejubeer@jejubeer.co.kr">jejubeer@jejubeer.co.kr</a></strong>
+            </p>
+          </div>
+          <div class="copy-right">
+            <p><strong>COPYRIGHT 2021@ JEJU BEER COMPANY</strong></p>
+          </div>
+        </div>
+      </footer>
+      <!-- pc-footer 끝 -->
+      <!-- mobile-footer 시작 -->
+      <footer id="mobile-footer-bar">
+        <div class="footer-container">
+          <div class="footer-info">
+            <nav class="footer-info__service-link">
+              <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">영상정보 처리방침</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="info-business">
+            <p>
+              제주맥주 주식회사 &nbsp; &nbsp; 대표이사 문혁기<br>
+              본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11<br>
+              서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층<br>
+              호스팅 제공자 (주)아임웹<br>
+              사업자등록번호 616-86-27415<br>
+              통신판매업신고번호 제 2020-제주한림-0101 호<br>
+              고객센터 <strong>02-2235-5559, <a href="mailto:jejubeer@jejubeer.co.kr">jejubeer@jejubeer.co.kr</a></strong>
+            </p>
+          </div>
+          <div class="copy-right">
+            <p><strong>COPYRIGHT 2021@ JEJU BEER COMPANY</strong></p>
+          </div>
+        </div>
+      </footer>
+      <!-- mobile-footer 끝 -->
+  </div>
+  <!-- footer wrap 구현 끝-->
+</body>
+</html>
